@@ -14,7 +14,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html,
@@ -46,10 +47,21 @@ body {
     border-right: 3px #000 solid;
     width: 70px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 1vh 0;
     /* background-color: red; */
     position: fixed;
@@ -66,12 +78,18 @@ body {
     width: calc(100vw - 70px);
     right: 0;
     height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 3vw;
     position: fixed;
     top: 0;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #nav>img {
@@ -83,9 +101,15 @@ body {
     border: none;
     color: white;
     font-size: 1.45vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: rgb(214, 0, 32);
     font-family: Druk heavy;
     font-family: 100;
@@ -96,9 +120,15 @@ body {
     height: 100vh;
     overflow: hidden;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -128,7 +158,9 @@ body {
     left: 31%;
     z-index: 98;
     height: 8.5vw;
-    transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+        -ms-transform: rotate(-25deg);
+            transform: rotate(-25deg);
     top: 11%;
 }
 
@@ -136,7 +168,9 @@ body {
     position: absolute;
     left: 50vw;
     top: 50vh;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     z-index: 99;
     height: 44vw;
 }
@@ -149,18 +183,25 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-
     /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 4vw;
     position: relative;
 }
 
 #bottle2 {
     position: absolute;
-    transform: rotate(-15deg) translate(-50%, 0);
+    -webkit-transform: rotate(-15deg) translate(-50%, 0);
+        -ms-transform: rotate(-15deg) translate(-50%, 0);
+            transform: rotate(-15deg) translate(-50%, 0);
     left: 49.5vw;
     top: 90vh;
     z-index: 99;
@@ -206,9 +247,15 @@ body {
     border: none;
     color: white;
     font-size: 1.35vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: rgb(15, 15, 15);
     font-family: vanguard CF;
     text-transform: uppercase;
@@ -221,13 +268,22 @@ body {
     border-color: rgba(0, 0, 0, 0.794);
     border-style: groove;
     padding: 4vh 0vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: gilroy;
     overflow: hidden;
     position: relative;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 #page2-part2 h5 {
@@ -255,13 +311,19 @@ body {
 }
 
 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
     margin-bottom: 20px;
     width: 19vw;
     border-top: 2px groove #000;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .box h3 {
@@ -287,9 +349,15 @@ body {
     position: absolute;
     overflow: hidden;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 7vw;
     font-family: gilroy;
 }
@@ -377,18 +445,29 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
 }
 
 .elemtext {
     height: 100%;
     position: relative;
     z-index: 99;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
 }
 
@@ -421,7 +500,9 @@ body {
     position: absolute;
     z-index: 99;
     left: 38%;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
     top: -24%;
     height: 54vw;
 }
@@ -430,7 +511,9 @@ body {
     z-index: 99;
     right: 11%;
     top: 29%;
-    transform: rotate(-36deg);
+    -webkit-transform: rotate(-36deg);
+        -ms-transform: rotate(-36deg);
+            transform: rotate(-36deg);
     height: 40vw;
 }
 
@@ -457,7 +540,9 @@ body {
     position: absolute;
     left: 50%;
     top: 25%;
-    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
 }
 
 #vines {
@@ -467,10 +552,17 @@ body {
     position: absolute;
     left: 51%;
     top: 34%;
-    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
 }
 
@@ -479,10 +571,18 @@ body {
     position: relative;
     width: 13%;
     /* background-color: yellow; */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding: 15px 10px;
 }
 
@@ -490,7 +590,9 @@ body {
     height: 85%;
     /* background-color: #fff; */
     margin-left: 30px;
-    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg);
 }
 
 #vinename {
@@ -498,4 +600,56 @@ body {
     font-size: 25px;
     text-align: center;
     font-family: druk heavy;
+}
+@media (max-width:600px) {
+    #nav-left{
+        display: none;
+    }
+    #pages{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    #nav{
+        width: 100vw;
+    }
+    #page1>h1 {
+        font-family: druk heavy;
+        background: url(https://lagunitas.com/wp-content/themes/lagunitas/assets/images/texture.png);
+        background-position: center;
+        background-size: cover;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        background-color: rgb(190, 0, 28);
+        -webkit-font-smoothing: antialiased;
+        width: 92vw;
+        font-size: 24vw;
+        cursor: default;
+        margin-top: -5vh;
+        line-height: 20vw;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 97;
+        background-repeat: no-repeat;
+    }
+    #bottle1 {
+        position: absolute;
+        left: 50vw;
+        top: 50vh;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        z-index: 99;
+        height:79vw;
+    } 
+    #page1dog {
+        position: absolute;
+        left: 27%;
+        z-index: 98;
+        height: 16.5vw;
+        -webkit-transform: rotate(-25deg);
+            -ms-transform: rotate(-25deg);
+                transform: rotate(-25deg);
+        top: 31%;
+    }
 }
